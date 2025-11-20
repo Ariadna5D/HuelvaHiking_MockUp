@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <title>OnubHike</title>
+  </head>
+  <body class="bg-light d-flex flex-column min-vh-100">
+    <!-- --------- NAVEGACIÓN CON LOGO ---------------- -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container">
+        <a class="navbar-brand fs-3 fw-bold d-flex align-items-center" href="#">
+          <img src="images/logo.png" alt="OnubHike Logo" class="me-2" style="height: 70px;">
+          OnubHike
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fs-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rutas.html">Rutas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipo.html">Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comunidad.html">Comunidad</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mt-3 flex-grow-1">
+      <div
+        class="bg-video-container mb-4 rounded-3 position-relative"
+        style="height: 60vh"
+      >
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="w-100 h-100"
+          style="object-fit: cover"
+        >
+          <source src="images/intro.mp4" type="video/mp4" />
+          Tu navegador no soporta videos HTML5.
+        </video>
+
+        <div
+          class="bg-black bg-opacity-25 position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center"
+        >
+          <div class="text-center text-white">
+            <h1 class="display-6 fw-bold">
+              Descubre las mejores rutas de Huelva
+            </h1>
+            <p class="lead">
+              Explora la naturaleza onubense a través de sus senderos
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------- TARJETAS ---------------- -->
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="ratio ratio-16x9">
+              <img
+                src="images/paisaje1.jpg"
+                class="card-img-top object-fit-cover"
+                alt="Rutas cercanas"
+              />
+            </div>
+            <div class="card-body d-flex flex-column text-center">
+              <h5 class="card-title fw-bold">Rutas cercanas</h5>
+              <p class="card-text text-muted">
+                Encuentra senderos increíbles cerca de ti.
+              </p>
+              <a href="rutas.html" class="btn btn-primary fs-4 fw-bold fw-bold text-light mt-auto">Ver rutas</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="ratio ratio-16x9">
+              <img
+                src="images/senial.jpg"
+                class="card-img-top object-fit-cover"
+                alt="Señal de Senderismo"
+              />
+            </div>
+            <div class="card-body d-flex flex-column text-center">
+              <h5 class="card-title fw-bold">Consejos</h5>
+              <p class="card-text text-muted">
+                Aprende las mejores prácticas para tus rutas.
+              </p>
+                  <button
+                    type="button"
+                    class="btn btn-lg btn-primary fs-4 fw-bold fw-bold text-light mt-auto"
+                    data-bs-toggle="popover"
+                    data-bs-title="En construcción!!"
+                    data-bs-content="Esta función está en desarrollo!"
+                  >
+                    Ver consejos
+                  </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="ratio ratio-16x9">
+              <img
+                src="images/equipo1.jpg"
+                class="card-img-top object-fit-cover"
+                alt="Equipo de senderismo"
+              />
+            </div>
+            <div class="card-body d-flex flex-column text-center">
+              <h5 class="card-title fw-bold">Equipo</h5>
+              <p class="card-text text-muted">
+                Descubre el equipo esencial para tus aventuras.
+              </p>
+              <a href="equipo.html" class="btn btn-primary fs-4 fw-bold text-light mt-auto"
+                >Ver equipos</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="ratio ratio-16x9">
+              <img
+                src="images/grupo.jpg"
+                class="card-img-top object-fit-cover"
+                alt="Grupo de senderismo"
+              />
+            </div>
+            <div class="card-body d-flex flex-column text-center">
+              <h5 class="card-title fw-bold">Comunidad</h5>
+              <p class="card-text text-muted">
+                Conecta con otros amantes del senderismo.
+              </p>
+              <a href="comunidad.html" class="btn btn-primary fs-4 fw-bold fw-bold text-light mt-auto"
+                >Ver comunidad</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- --------- CARRUSEL ---------------- -->
+    <div
+      id="carouselExample"
+      class="carousel slide my-5 d-none d-md-block"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+          data-bs-interval="3000"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner rounded-3 overflow-hidden shadow">
+        <div class="carousel-item active">
+          <div class="ratio ratio-16x9">
+            <img
+              src="images/general.jpg"
+              class="d-block w-100 object-fit-cover"
+              alt="Paisaje general de senderismo"
+            />
+          </div>
+          <div
+            class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3"
+          >
+            <h5>Explora la naturaleza</h5>
+            <p>Descubre paisajes increíbles en la provincia de Huelva</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="ratio ratio-16x9">
+            <img
+              src="images/carrusel1.jpg"
+              class="d-block w-100 object-fit-cover"
+              alt="Ruta de senderismo"
+            />
+          </div>
+          <div
+            class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3"
+          >
+            <h5>Rutas para todos los niveles</h5>
+            <p>Encuentra senderos adaptados a tu experiencia</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="ratio ratio-16x9">
+            <img
+              src="images/carrusel4.jpg"
+              class="d-block w-100 object-fit-cover"
+              alt="Grupo de senderistas"
+            />
+          </div>
+          <div
+            class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3"
+          >
+            <h5>Comunidad activa</h5>
+            <p>Únete a otros amantes del senderismo</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <!-- --------- FOOTER ---------------- -->
+    <footer class="bg-dark text-white mt-auto">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="d-flex align-items-center mb-3">
+              <img src="images/logo.png" alt="OnubHike Logo" class="me-2" style="height: 50px;">
+              <h5 class="fw-bold mb-0">OnubHike</h5>
+            </div>
+            <p class="text-light">
+              Descubre las mejores rutas de senderismo en la provincia de Huelva. 
+              Conecta con la naturaleza y con otros amantes del senderismo.
+            </p>
+            <div class="d-flex mt-4">
+              <a href="#" class="text-white me-3">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-white me-3">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-white me-3">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-white">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">Enlaces rápidos</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="index.html" class="text-light text-decoration-none">Inicio</a>
+              </li>
+              <li class="mb-2">
+                <a href="rutas.html" class="text-light text-decoration-none">Rutas</a>
+              </li>
+              <li class="mb-2">
+                <a href="equipo.html" class="text-light text-decoration-none">Equipo</a>
+              </li>
+              <li class="mb-2">
+                <a href="comunidad.html" class="text-light text-decoration-none">Comunidad</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">Rutas populares</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none">Paraje Natural Marismas del Río Piedras</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none">Parque Natural de Doñana</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none">Hornos de Cal</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none">Castaño del Robledo y Picos de Aroche</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none">Ribera del Jabugo</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">Contacto</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i>
+                <span class="text-light">Huelva</span>
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-envelope me-2"></i>
+                <a href="mailto:info@onubhike.com" class="text-light text-decoration-none">iessansebastian@onubhike.es</a>
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-phone me-2"></i>
+                <span class="text-light">+34 666 123 456</span>
+              </li>
+            </ul>
+            
+            <div class="mt-4">
+              <h6 class="fw-bold">Suscríbete a nuestro newsletter</h6>
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Tu email" aria-label="Email">
+                <button class="btn btn-primary text-light" type="button">Suscribir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <hr class="my-4">
+        
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0">OnubHike</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#" class="text-light text-decoration-none me-3">Política de privacidad</a>
+            <a href="#" class="text-light text-decoration-none me-3">Términos de uso</a>
+            <a href="#" class="text-light text-decoration-none">Mapa del sitio</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var popoverTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="popover"]')
+        );
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl);
+        });
+      });
+    </script>
+  </body>
+</html>
